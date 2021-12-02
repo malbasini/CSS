@@ -1,0 +1,50 @@
+/*--ESEMPIO DI EXTERNAL STYLE*/
+/*--In questo foglio di stile h1 è il selettore, mentre color e text-align
+    sono due proprietà. La prima imposta il colore del testo mentre con la
+    seconda informiamo il browser che il testo deve essere centrato.
+    In questo esempio il selettore h1 ha tre impostazioni della
+    proprietà color,ma con valori diversi. Quella inline vince su tutte.*/
+h1{
+    color: blueviolet;
+    text-align: center;
+}
+/*--Il selettore di elementi seleziona gli elementi HTML 
+    in base al nome dell'elemento. In questo caso i paragrafi.*/
+p{
+    color: red;
+    text-align:left;
+}
+/*--Selezione di un elemento h2 in base al suo identificativo(id)
+    la proprietà background-color specifica il colore di sfondo
+    dell'elemento*/
+#intestazionedue{
+    color: chocolate;
+    text-align: center;
+    background-color: aquamarine;
+}
+/*--Selezione di un elemento div in base alla classe. La proprietà border
+    specifica una bordo di 5px solid di colore rosso. Volendo si possono
+    impostare le tre proprietà singolarmente.*/
+.myclass{
+    color: white;
+    background-color: brown;
+    text-align: center;
+    border: 5px solid red;
+}
+/*--Il selettore di raggruppamento seleziona tutti 
+    gli elementi HTML con le stesse definizioni di stile.*/
+h1,h2 {
+    border:2px solid black
+}
+/*--In questo esempio applico un font al div*/
+.myclass2{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    border: 5px solid red;
+}
+span{
+    background-color: blue;
+    border:2px solid green;
+    color:white;
+}
