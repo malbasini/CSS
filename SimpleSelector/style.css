@@ -43,8 +43,20 @@ h1,h2 {
     font-style: italic;
     border: 5px solid red;
 }
-span{
+/*--lo stile verrà applicato solo ai tag span che presentino 
+     l’attributo class="bold"*/
+span.bold{
     background-color: blue;
     border:2px solid green;
     color:white;
+    font-weight:bold;
+}
+/*--Questa regola applicherà gli stili impostati a tutti gli elementi 
+    in cui siano presenti (in qualunque ordine) i nomi delle classi 
+    definiti nel selettore. Avranno dunque il testo biano e in 
+    grassetto questi paragrafi:<p class="testobianco grassetto">...</p>*/
+p.testobianco.grassetto {
+    color:white; 
+    font-weight:bold;
+    background-color: blue;
 }

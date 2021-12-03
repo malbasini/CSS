@@ -12,21 +12,22 @@
 <body>
     <!--ESEMPIO DI SILE IN LINE-->
     <h1 style="color: blue; text-align:center;">SIMPLE SELECTOR</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    <p>Lorem,
+    <span class="bold"> ipsum dolor sit amet consectetur adipisicing elit.</span> 
         Tenetur vero illum similique, ullam perferendis veritatis 
         quod commodi odit, dolor alias dolore rem maiores corporis nihil 
         harum quos molestiae recusandae itaque!
     </p>
     <p>Vitae, autem nemo quia eaque libero ea expedita at ipsa, 
-        iusto repellat suscipit molestias maiores esse itaque obcaecati 
+        iusto repellat <span class="bold">suscipit molestias maiores esse itaque obcaecati</span>  
         consequuntur illum sint provident! Minus, qui cum? Rem nihil 
         delectus assumenda ullam!
     </p>
     <div>
         <h2 id="intestazionedue">QUESTA INTESTAZIONE E IL PARAGAFO SI TROVANO DENTRO AL DIV</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Reprehenderit quasi delectus vel explicabo recusandae 
-            deleniti iure sed similique, error accusantium quidem officia 
+        <p>Lorem ipsum dolor,<span class="bold">sit amet consectetur adipisicing elit. </span>  
+            Reprehenderit quasi deectus vel explicabo recusandae 
+            deleniti iure sed simillique, error accusantium quidem officia 
             repellat voluptatem nobis! Rem quibusdam ea consequatur fugit!
         </p>
     </div>
@@ -42,10 +43,16 @@
     <div class="myclass2">
         <h4>INTESTAZIONE 4</h4>
     </div>
-    <p> <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span> 
-        Impedit itaque excepturi omnis quisquam! Quis et iusto, 
+    <p class="testobianco grassetto"> Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Impedit itaque excepturi omnis quisquam! Quis et iusto, 
         aliquid iure repellat quod laudantium minima maiores eaque incidunt nemo, 
         porro consequuntur asperiores! Ipsum.
     </p>
+    <!--La classe bold non verrà applicata al paragrafo in quanto
+        è stata dichiarata sul tag span-->
+    <p class="bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Accusantium laborum optio, ea iusto adipisci itaque, quam 
+        recusandae reprehenderit, eaque explicabo quo nemo consequuntur 
+        velit cum totam aliquam. Voluptate, atque architecto?</p>
 </body>
 </html>
