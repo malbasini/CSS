@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>SIMPLE SELECTOR</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1 style="color: blue; text-align:center;">CSS COMBINATORS SELECTORS</h1>
+    <h2>Descendand Selector</h2>
+    <div class="p1">
+        <p>Paragrafo 1 nel DIV.</p>
+        <p>Paragrafo 2 nel DIV.</p>
+        <section><p>Paragrafo 3 nel DIV.</p></section>
+        <h3>INTESTAZIONE TRE NEL DIV</h3>
+    </div>
+    <p>Paragrafo 4 fuori dal DIV.</p>
+    <p>Paragrafo 5 fuori dal DIV.</p>
+    <h2>Child Selector</h2>
+    <div class="p2">
+        <p>Paragrafo 1 nel DIV.</p>
+        <p>Paragrafo 2 nel DIV.</p>
+        <span>
+          <!-- not Child but Descendant -->
+          <p>Paragrafo 3 nel DIV. (dentro un elemento span descendand).</p>
+        </span>
+        <p>Paragrafo 4 nel DIV.</p>
+      </div>
+      <p>Paragrafo 5 fuori dal DIV.</p>
+      <h2>Adjacent Sibling Selector
+      </h2>
+      <div class="p3">
+        <p>Paragrafo 1 in nel DIV.</p>
+        <p>Paragrafo 2 in nel DIV.</p>
+      </div>
+      <p>Paragrafo 3 fuori dal DIV.</p>
+      <p>Paragrafo 4 fuori dal DIV.</p>
+      <h2>General Sibling Selector</h2>
+      <div class="p4">
+        <p>Paragrafo 1 in nel DIV.</p>
+        <p>Paragrafo 2 in nel DIV.</p>
+      </div>
+      <p>Paragrafo 3 fuori dal DIV.</p>
+      <p>Paragrafo 4 fuori dal DIV.</p>
+      <h1 style="color: blue; text-align:center;">CSS PSEUDO CLASSES</h1>
+      <h2>Anchor Pseudo-classes</h2>
+      <a class="microsoft" href="https://microsofr.com">Microsoft</a>
+      <h2>Pseudo-classes and HTML Classes</h2>
+      <a class="google" href="https://google.com">Google</a>
+      <br>
+      <br>
+      <h2>Hover on div</h2>
+      <div class="p5">
+           OVER ON ELEMENT DIV
+      </div>
+      <br>
+      <br>
+      <h2>CSS - The :first-child Pseudo-class</h2>
+      <div>
+        <p class="child">Primo figlio</p>
+        <p class="child">Secondo figlio</p>
+      </div>
+      <div>
+        <p>Testo di <em> esempio </em>. Testo di<em> esempio </em>.</p>
+        <p>Testo di <em> esempio </em>. Testo di<em> esempio </em>.</p>
+      </div>
+      <h1 style="color: blue; text-align:center;">CSS PSEUDO-ELEMENTS</h1>
+      <h2>The ::first-line Pseudo-element</h2>
+      <p class="p6">Lorem ipsum dolor sit amet consectetur <br> 
+          adipisicing elit. Incidunt est illo rem, sunt quos <br> 
+          quae sint illum, assumenda expedita, nostrum dolorem <br> 
+          necessitatibus reprehenderit. Nobis officia laudantium <br>
+          accusantium quos optio qui!
+      </p>
+      <h1 class="p7">ESEMPIO DI ::BEFORE E ::AFTER</h1>
+      <br>
+      <br>
+      <h2>CSS - The ::marker Pseudo-element</h2>
+      <ol>
+          <li>PRIMO</li>
+          <li>SECONDO</li>
+          <li>TERZO</li>
+      </ol>
+      <h1 style="color: blue; text-align:center;">CSS ATTRIBUTE SELECTOR</h1>
+      <h2>CSS [attribute="value"] Selector</h2>
+      <a href="https://www.goole.com">Google</a>
+      <a href="https://www.yhaoo.com" target="_blank">Yhaoo</a>
+      <a href="https://www.microsoft.com" target="_top">Microsoft</a>
+      <br>
+      <br>
+      <h2>CSS [attribute~="value"] Selector</h2>
+      <img src="klematis.jpg" title="klematis flower" width="150" height="113">
+      <img src="img_flwr.gif" title="flower" width="224" height="162">
+      <img src="img_tree.gif" title="tree" width="200" height="358">
+      <br>
+      <br>
+      <h2>CSS [attribute|="value"] Selector</h2>
+      <h4 class="left-header">Header h4 uno</h4>
+      <h4 class="left-text">Header h4 due</h4>
+      <h4 class="leftcontent">Header h4 tre</h4> 
+      <h2> CSS [attribute^="value"] Selector</h2>
+      <h4 class="top-header">Header h4 quattro</h4>
+      <h4 class="top-text">Header h4 cinque</h4>
+      <h4 class="topcontent">Header h4 sei</h4> 
+      <br>
+      <h2>CSS [attribute$="value"] Selector</h2>
+      <h4 class="bottom-text1">Header h4 sette</h4>
+      <h4 class="bottomcontent">Header h4 otto</h4> 
+      <br>
+      <h2>CSS [attribute*="value"] Selector</h2>
+      <h4 class="right-text">Header h4 nove</h4>
+      <h4 class="rightcontent">Header h4 dieci</h4> 
+      <h2>Styling Forms</h2>
+      <input type="button" value="Click me!">
+</body>
+</html>

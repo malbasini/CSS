@@ -1,0 +1,192 @@
+/******************************
+/*--CSS COMBINATORS SELECTORS *
+/******************************
+/*1) DECSDENDAND SELECTOR (SPACE) Il selettore descendand corrisponde a tutti 
+     gli elementi che sono discendenti di un elemento specificato. In
+     questo esempio per isolare il DIV applicol'attributo class p1*/
+div.p1 p{
+    background-color: yellow;
+    color:black;
+    border: 2px solid red;
+}
+div.p1 h3{
+    background-color: yellow;
+    color:black;
+    border: 2px solid red;
+}
+/*2)--CHILD SELECTOR (>)*Il selettore child seleziona tutti gli elementi 
+      che sono figli di un elemento specificato.In questo esempio per isolare 
+      il DIV applicol'attributo class p2*/
+div.p2 > p {
+    background-color:bisque;
+    color:black;
+    border: 2px solid sienna;
+}
+/*3)--ADJACENT SIBLING SELECTOR (+) Il seguente esempio
+      seleziona il primo elemento p che viene posizionato immediatamente
+      dopo il div. Per isolare il DIV applico l'attributo class p3*/
+   div.p3 + p{
+    background-color:greenyellow;
+    color:black;
+    border: 2px solid mediumvioletred;
+   }
+/*4)GENERAL SIBLING SELECTOR Selector (~) The general sibling selector 
+    selects all elements that are next siblings of a specified element.
+    Per isolare il DIV applico l'attributo class p4--*/
+    div.p4 ~ p {
+        background-color:chartreuse;
+    }  
+/**********************
+/*--CSS PSEUDO CLASSES*
+/**********************
+     sintassi:
+     selector:pseudo-class {
+       property: value;
+   }
+   */
+/*--1) ANCHOR PSEUDO-CLASSES Per isolare il tag a applico 
+       l'attributo class microsoft*/
+/* unvisited link */
+a.microsoft:link {
+    color: #FF0000;
+  }
+  
+  /* visited link */
+  a.microsoft:visited {
+    color: #00FF00;
+  }
+  
+  /* mouse over link */
+  a.microsoft:hover {
+    color: #FF00FF;
+  }
+  
+  /* selected link */
+  a.microsoft:active {
+    color: #0000FF;
+  }
+  /*2) PSEUDO CLASSES AND HTML CLASSES Per isolare il tag a applico 
+       l'attributo class google*/
+  a.google:link {
+    color:grey;
+    border: 1px solid maroon;
+    font-size: xx-large;
+  }
+  div.p5:hover{
+      color: green;
+      border: 1px solid black;
+      font-size: xx-large;
+      text-align: center;
+      background-color: yellow;
+  }
+/*3) FIRST-CHILD La pseudo-classe :first-child corrisponde a un 
+     elemento che è il primo figlio di un altro elemento. Per isolare 
+     il tag a applico l'attributo class child al paragrafo*/
+p.child:first-child{
+  color: #0000FF;
+  border: 2px solid forestgreen;
+  background-color: yellow;
+}
+/*4)MATCH THE FIRST <em> ELEMENT IN ALL <p> ELEMENTS--*/
+p em:first-child {
+  color: blue;
+}
+/*5) Match all <em> elements in all first child <p> elements*/
+p:first-child em {
+  color:gray;
+}
+/*******************
+/*--PSEUDO ELEMENTS*
+/*******************
+  syntax:
+  selector::pseudo-element {
+      property: value;
+}
+*/
+  p::first-letter {
+    color: red;
+    font-size: xx-large;
+  }
+  p::first-line {
+    color:blueviolet;
+    font-variant:normal
+  }
+/*--PSEUDO-ELEMENTS AND CSS CLASSES al paragrafo avente attributo class
+    p6 applico ::first-line*/   
+p.p6::first-line{
+    color: blue;
+    background-color: bisque;
+}
+p.p6::first-letter{
+    color: #FF0000;
+    font-size: xx-large;
+}
+/*--CSS - THE ::BEFORE PSEUDO-ELEMENT Lo pseudo-elemento ::before 
+     può essere utilizzato per inserire del contenuto prima del contenuto 
+     di un elemento. Per isolare il tag h1 applico l'attributo class p7*/
+h1.p7::before {
+    content: url(https://www.icegif.com/wp-content/uploads/smile-icegif-1.gif);
+  }
+  /*--CSS - THE ::AFTER PSEUDO-ELEMENT Lo pseudo-elemento ::after 
+     può essere utilizzato per inserire del contenuto dopo il contenuto 
+     di un elemento. Per isolare il tag h1 applico l'attributo class p7*/
+h1.p7::after {
+    content: url(https://www.icegif.com/wp-content/uploads/smile-icegif-1.gif);
+  }
+  /*--CSS - THE ::MARKER PSEUDO-ELEMENT Lo pseudo-element ::marker seleziona i marker 
+      degli elementi della lista.*/
+  ::marker{
+      color: red;
+  }
+  /*--CSS - THE ::SELECTION PSEUDO-ELEMENT Lo pseudo-elemento ::selection 
+      corrisponde alla porzione di un elemento selezionata da un utente.*/
+  ::selection {
+    color: blue;
+    background: yellow;
+  }
+/**************************  
+/*--CSS ATTRIBUTE SLECTORS*
+/**************************
+   1)Il selettore [attribute="value"] viene utilizzato per 
+   selezionare elementi con un attributo e un valore specificati.*/
+  a[target="_blank"] {
+    background-color: yellow;
+  }
+  /*2)Il selettore [attribute~="value"] viene utilizzato per 
+    selezionare elementi con un valore di attributo contenente una 
+    parola specificata..*/
+    [title~="flower"] {
+      border: 5px solid blue;
+    }
+    /*3)Il selettore [attribute|="value"] viene utilizzato per selezionare 
+        elementi con l'attributo specificato a partire dal valore specificato.*/
+    [class|="left"] {
+      background: #00ff37;
+    }
+    /*4)Il selettore [attribute^="value"] viene utilizzato per 
+        selezionare elementi il cui valore di attributo inizia 
+        con un valore specificato.*/
+    [class^="top"] {
+        background:#FF00FF;
+    }  
+    /*5)Il selettore [attribute$="value"] viene utilizzato per selezionare 
+        elementi il cui valore di attributo termina con un valore specificato.*/ 
+    [class$="text1"]
+    {
+      background-color:green ;
+    }
+    /*6)Il selettore [attribute*="value"] viene utilizzato per selezionare elementi il 
+        cui valore di attributo contiene un valore specificato.*/
+    [class*="ghtcontent"]
+    {
+      background-color: red;
+    }
+    /*--STYLING FORMS*/
+    input[type="button"] {
+      width: 120px;
+      margin-left: 35px;
+      border: 2 px solid grey;
+    }
+    
+  
+  
