@@ -3,7 +3,7 @@
 /******************************
 /*1) DECSDENDAND SELECTOR (SPACE) Il selettore descendand corrisponde a tutti 
      gli elementi che sono discendenti di un elemento specificato. In
-     questo esempio per isolare il DIV applicol'attributo class p1*/
+     questo esempio per isolare il DIV applico l'attributo class p1*/
 div.p1 p{
     background-color: yellow;
     color:black;
