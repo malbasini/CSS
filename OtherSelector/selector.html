@@ -7,35 +7,34 @@
 </head>
 <body>
     <h1 style="color: blue; text-align:center;">CSS COMBINATORS SELECTORS</h1>
-    <h2>Descendand Selector</h2>
+    <h2>Descendand Selector (div p)</h2>
     <div class="p1">
         <p>Paragrafo 1 nel DIV.</p>
         <p>Paragrafo 2 nel DIV.</p>
-        <section><p>Paragrafo 3 nel DIV.</p></section>
+        <section><p>Paragrafo 3 nel DIV annidato in una section.</p></section>
         <h3>INTESTAZIONE TRE NEL DIV</h3>
     </div>
     <p>Paragrafo 4 fuori dal DIV.</p>
     <p>Paragrafo 5 fuori dal DIV.</p>
-    <h2>Child Selector</h2>
+    <h2>Child Selector (div > p)</h2>
     <div class="p2">
         <p>Paragrafo 1 nel DIV.</p>
         <p>Paragrafo 2 nel DIV.</p>
         <span>
           <!-- not Child but Descendant -->
-          <p>Paragrafo 3 nel DIV. (dentro un elemento span descendand).</p>
+          <p>Paragrafo 3 nel DIV. (dentro un elemento span descendant).</p>
         </span>
         <p>Paragrafo 4 nel DIV.</p>
       </div>
       <p>Paragrafo 5 fuori dal DIV.</p>
-      <h2>Adjacent Sibling Selector
-      </h2>
+      <h2>Adjacent Sibling Selector (div + p)</h2>
       <div class="p3">
-        <p>Paragrafo 1 in nel DIV.</p>
-        <p>Paragrafo 2 in nel DIV.</p>
+        <p>Paragrafo 1 nel DIV.</p>
+        <p>Paragrafo 2 nel DIV.</p>
       </div>
       <p>Paragrafo 3 fuori dal DIV.</p>
       <p>Paragrafo 4 fuori dal DIV.</p>
-      <h2>General Sibling Selector</h2>
+      <h2>General Sibling Selector (div ~ p)</h2>
       <div class="p4">
         <p>Paragrafo 1 in nel DIV.</p>
         <p>Paragrafo 2 in nel DIV.</p>
@@ -44,7 +43,7 @@
       <p>Paragrafo 4 fuori dal DIV.</p>
       <h1 style="color: blue; text-align:center;">CSS PSEUDO CLASSES</h1>
       <h2>Anchor Pseudo-classes</h2>
-      <a class="microsoft" href="https://microsofr.com">Microsoft</a>
+      <a class="microsoft" href="https://microsoft.com">Microsoft</a>
       <h2>Pseudo-classes and HTML Classes</h2>
       <a class="google" href="https://google.com">Google</a>
       <br>
@@ -72,7 +71,7 @@
           necessitatibus reprehenderit. Nobis officia laudantium <br>
           accusantium quos optio qui!
       </p>
-      <h1 class="p7">ESEMPIO DI ::BEFORE E ::AFTER</h1>
+      <h1 class="p7" style="align-items: center;">ESEMPIO DI ::BEFORE E ::AFTER</h1>
       <br>
       <br>
       <h2>CSS - The ::marker Pseudo-element</h2>

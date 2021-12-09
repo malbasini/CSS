@@ -34,7 +34,9 @@ div.p2 > p {
     selects all elements that are next siblings of a specified element.
     Per isolare il DIV applico l'attributo class p4--*/
     div.p4 ~ p {
-        background-color:chartreuse;
+        background-color:black;
+        color:white;
+        border: 2px solid red;
     }  
 /**********************
 /*--CSS PSEUDO CLASSES*
@@ -87,13 +89,13 @@ p.child:first-child{
   border: 2px solid forestgreen;
   background-color: yellow;
 }
-/*4)MATCH THE FIRST <em> ELEMENT IN ALL <p> ELEMENTS--*/
+/*4) Match all <em> elements in all first child <p> elements*/
 p em:first-child {
-  color: blue;
+  color:red;
 }
-/*5) Match all <em> elements in all first child <p> elements*/
+/*5)MATCH THE FIRST <em> ELEMENT IN ALL <p> ELEMENTS--*/
 p:first-child em {
-  color:gray;
+  color:red;
 }
 /*******************
 /*--PSEUDO ELEMENTS*
@@ -104,12 +106,13 @@ p:first-child em {
 }
 */
   p::first-letter {
-    color: red;
+    color:red;
     font-size: xx-large;
   }
   p::first-line {
-    color:blueviolet;
-    font-variant:normal
+    color:brown;
+    font-variant:normal;
+    font-weight: 700;
   }
 /*--PSEUDO-ELEMENTS AND CSS CLASSES al paragrafo avente attributo class
     p6 applico ::first-line*/   
