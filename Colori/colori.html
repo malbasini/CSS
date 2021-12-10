@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>COLORI CSS</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>RGBA SELEZIONARE I VARI CANALI PER IMPOSTARE IL COLORE </h1>
+    <hr>
+    <div class="div1">
+        <h2>COLORE:</h2>
+    </div>
+    <br>
+    <table>
+        <tr>
+            <td>
+                <label for="red">RED</label>
+                <input type="range" class="red" value="255" min="0" max="255" 
+                onchange="changeRGB()" oninput="changeRGB()">
+            </td>
+            <td>
+                <label for="green">GREEN</label>
+                <input type="range" class="green" min="0" max="255" value="0" 
+                onchange="changeRGB()" oninput="changeRGB()">
+            </td>
+            <td>
+                <label for="blue">BLUE</label>
+                <input type="range" class="blue" min="0" max="255" value="0" 
+                onchange="changeRGB()" oninput="changeRGB()">
+            </td>
+            <td>
+                <label for="alpha">ALPHA</label>
+                <input type="range" class="alpha" min="0" max="10" value="5" 
+                onchange="changeRGB()" oninput="changeRGB()">
+            </td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h1>CSS BACKGROUND COLOR</h1>
+    <h2 class="hello">
+        HELLO WORLD!
+    </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Doloremque obcaecati explicabo nihil earum in sunt aperiam officiis. 
+        Non, porro alias nostrum cupiditate dicta blanditiis, 
+        distinctio sequi ratione, officia asperiores magnam.
+    </p>
+    <h1>CSS BORDER COLOR</h1>
+    <h2 class="hello1">HELLO WORLD!</h2>
+    <h2 class="hello2">HELLO WORLD!</h2>
+    <h2 class="hello3">HELLO WORLD!</h2>
+    <br>
+    <hr>
+    <h1>INPUT TYPE COLOR SELEZIONA LE VARIE RAPPRESENTAZIONI DI COLORE</h1>
+    <div class="div2">
+        <input type="color" value="#FF0000" width="300px" height="200px">
+    </div>
+</body>
+</html>
