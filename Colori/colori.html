@@ -58,5 +58,40 @@
     <div class="div2">
         <input type="color" value="#FF0000">
     </div>
+    <br>
+    <h1>HSLA SELEZIONARE I VARI CANALI PER IMPOSTARE IL COLORE </h1>
+    <hr>
+    <div class="div3">
+        <h2>COLORE:</h2>
+    </div>
+    <br>
+    <table>
+        
+        <tr>
+            <td>
+                <label for="hue">TONALITA'</label>
+                <input class="hue" onchange="changeHsla()" oninput="changeHsla()" 
+                type="range" id="slideHueA" name="slideHueA" value="0" min="0" max="360">
+            </td>
+            <td>
+                <label for="saturazione">SATURAZIONE %</label>
+                <input class="saturazione" onchange="changeHsla()" oninput="changeHsla()" 
+                type="range" id="slideSatA" name="slideSatA" value="100" 
+                min="0" max="100">
+            </td>
+            <td>
+                <label for="luminosita">LUMINOSITA' %</label>
+                <input class="luminosita" onchange="changeHsla()" oninput="changeHsla()" type="range" 
+                id="slideLightA" name="slideLightA" value="50" min="0" max="100">
+            </td>
+            <td>
+                <label for="alpha">ALPHA</label>
+                <input class="alpha2" onchange="changeHsla()" oninput="changeHsla()" type="range" 
+                id="slideHslAlpha" name="slideHslAlpha" value="5" min="0" max="10">
+            </td>
+        </tr>
+    </table>
+    <br>
+    <hr>
 </body>
 </html>
