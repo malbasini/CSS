@@ -43,3 +43,27 @@ h1{
   padding: 50px 25px 50px 25px;/*--top right bottom left*/
   border:3px solid #b56576
 }
+.uno{
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+}
+.due{
+    width: 300px;
+    height: 100px;  
+    padding: 50px;
+    border: 1px solid red;
+}
+.tre{
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+.quattro{
+    width: 300px;
+    height: 100px;  
+    padding: 50px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
