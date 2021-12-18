@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+}
+.red-box {
+  position: relative;
+  z-index: 1;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+  background-color:red;
+}
+.gray-box {
+  position: absolute;
+  z-index: 2;
+  background-color: gray;
+  height: 60px;
+  width: 70%;
+  left: 50px;
+  top: 50px;
+}
+.green-box {
+  position: absolute;
+  z-index: 3;
+  background-color: green;
+  width: 35%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+}
+h1 {text-align: center;background-color: coral;border: 1px solid black;}
+</style>
+</head>
+<body>
+    <h1>PROPRIETA' Z-INDEX</h1>
+<div class="container">
+  <div class="red-box">Box rosso</div>
+  <div class="gray-box">Box grigio</div>
+  <div class="green-box">Box verde</div>
+</div>
+</body>
+</html>

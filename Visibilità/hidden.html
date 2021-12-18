@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Hidden Element</title>
+    <style type="text/css">
+        h1 {text-align: center;background-color: coral;border: 1px solid black;}
+        p {font-family: Arial, Helvetica, sans-serif; font-size: xx-large;
+           border: 4px solid greenyellow; background-color: goldenrod;}
+        li{display: inline;font-family: Arial, Helvetica, sans-serif; 
+          font-size: xx-large; padding:30px}
+        ::marker{
+            color: red;
+        }
+    </style>
+    <script type="text/javascript">
+        function mostra()
+        {
+            let p = document.getElementById("paragrafo");
+            p.style.display="block";
+        }
+        function nascondi()
+        {
+            let p = document.getElementById("paragrafo");
+            p.style.display="none";
+        }
+    </script>
+</head>
+<body>
+    <h1>NASCONDERE UN ELEMENTO CON JAVASCRIPT</h1>
+    <div>
+        <p id="paragrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Voluptatum repellat porro modi numquam, ipsum ratione 
+            molestias quidem, eius delectus quaerat non veritatis 
+            officiis aut sint fugiat illo ex qui excepturi?
+        </p>
+    </div>
+    <label for="radio1" >Nascondi</label>
+    <input type="radio" id="radio1" title="Nascondi" name="hidden" onclick="nascondi()">
+    <label for="radio2" >Mostra</label>
+    <input type="radio" id="radio2" name="hidden" title="Mostra" onclick="mostra()">
+    <br>
+    <br>
+    <h1>TRASFORMARE UN ELEMENTO BLOCK LEVEL IN ELEMENTO INLINE</h1>
+    <ol>
+        <li>UNO</li>
+        <li>DUE</li>
+        <li>TRE</li>
+        <li>QUATTRO</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.div1 {
+  float: left;
+  padding: 10px;
+  border: 3px solid green;
+}
+
+.div2 {
+  padding: 10px;
+  border: 3px solid red;
+}
+
+.div3 {
+  float: left;
+  padding: 10px;  
+  border: 3px solid green;
+}
+
+.div4 {
+  padding: 10px;
+  border: 3px solid red;
+  clear: left;
+}
+.img1 {
+    float: right;
+  }
+  
+  .img2 {
+    float: right;
+  }
+  
+  .clearfix{
+    overflow: auto;
+    border: 3px solid #4CAF50;
+    padding: 5px; 
+  }
+  .div5 {
+    border: 3px solid #4CAF50;
+    padding: 5px;
+  }
+h1 {text-align: center;background-color: coral;border: 1px solid black;}
+</style>
+</head>
+<body>
+<h1>CLEAR</h1>
+<h2>Senza clear</h2>
+<div class="div1">div1</div>
+<div class="div2">div2</div>
+<br>
+<br>
+<h2>Con clear</h2>
+<div class="div3">div3</div>
+<div class="div4">div4 - clear: left; sposta div4 in basso sotto il div3 float. 
+                  Il valore "left" cancella gli elementi float a sinistra. 
+                  Puoi anche cancellare "right" e "both (entrambi)".
+</div>
+<br>
+<br>
+<h1>CLEARFIX</h1>
+<h2>Senza Clearfix</h2>
+<div class="div5">
+  <img class="img1" src="Orange.jpg" alt="Orange" width="170" height="170">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Corporis eligendi quos reiciendis maiores ducimus quaerat 
+    sint vel? Nisi ducimus est quo. Minima, fugit magni porro aspernatur 
+    ipsam natus aliquam quis.
+  </p>
+</div>
+
+<h2 style="clear:right">Con Clearfix</h2>
+<p>Possiamo risolvere questo problema aggiungendo una classe clearfix 
+    con overflow: auto; all'elemento contenitore:
+</p>
+<div class="clearfix">
+  <img class="img2" src="Orange.jpg" alt="Orange" width="170" height="170">
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+   Minus perspiciatis eaque et alias voluptate, dolor totam error at 
+   nobis cum repellat iusto impedit sed natus necessitatibus tempora 
+   deleniti consequatur consectetur!
+  </p>
+</div>
+</body>
+</html>
+
+

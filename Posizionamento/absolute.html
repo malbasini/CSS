@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Posizionamento Absolute</title>
+    <style type="text/css">
+        .relative{position: relative; width: 800px; height: 300px;
+        border: 4px solid red;}
+        .absolute{position: absolute;width: 300px; height: 150px; border: 3px solid green;
+            padding: 20px;top: 150px;left: 30px;}
+        h1{text-align: center;background-color: coral;border: 1px solid black;}
+    </style>
+</head>
+<body>
+    <h1>POSIZIONAMENTO ASSOLUTO</h1>
+    <div class="relative">
+
+    </div>
+    <div class="absolute">
+        Un elemento con posizione absolute è posizionato rispetto all'antenato 
+        posizionato più vicino (anziché posizionato rispetto al viewport, come fisso). 
+        Tuttavia, se un elemento posizionato in modo assoluto non ha antenati posizionati, 
+        utilizza il corpo del documento e si sposta insieme allo scorrimento della pagina.
+    </div>
+    <div style="padding-bottom:2000px">
+
+    </div>
+</body>
+</html>
