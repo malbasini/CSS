@@ -41,23 +41,25 @@
         Ciò significa: quando si imposta la larghezza/altezza di un elemento, 
         l'elemento spesso appare più grande di quanto è stato impostato 
         (perché il bordo dell'elemento e il riempimento vengono aggiunti 
-        alla larghezza/altezza specificata dell'elemento).
+        alla larghezza/altezza specificata dell'elemento).Dal momento che il risultato 
+        dell'utilizzo del box-sizing: border-box; è molto meglio, molti sviluppatori 
+        vogliono che tutti gli elementi delle loro pagine funzionino in questo modo.
+
+        * {
+            box-sizing: border-box;
+          }
     </p>
 
     <h2>Senza box-sizing</h2>
 
     <div class="uno">Questo div è più piccolo (la larghezza è 300 px e l'altezza è 100 px).</div>
     <br>
-    <div class="due">Questo div è più grande (anche la larghezza è 300 px e l'altezza è 100 px).</div>
+    <div class="due">Questo div è più grande (la larghezza è 300 px e l'altezza è 100 px).</div>
 
     <h2>Con box-sizing</h2>
     <hr>
     <div class="tre">Questo div è ok.</div>
     <br>
     <div class="quattro">Questo div è ok.</div>
-
-
-
-
 </body>
 </html>
