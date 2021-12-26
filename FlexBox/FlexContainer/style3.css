@@ -1,0 +1,77 @@
+.flex-container1{
+    display: flex;
+    background-color: darkgreen;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.flex-container1 > div {
+    background-color: goldenrod;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.flex-container2{
+   display: flex;
+   background-color: darkgreen;
+   height: 600px;
+   flex-wrap: wrap;
+   align-content: flex-start;
+}
+.flex-container2 > div {
+   background-color: goldenrod;
+   width: 100px;
+   margin: 10px;
+   text-align: center;
+   line-height: 75px;
+   font-size: 30px;
+}
+.flex-container3{
+   display: flex;
+   background-color: darkgreen;
+   height: 600px;
+   flex-wrap: wrap;
+   align-content: flex-end;
+}
+.flex-container3 > div {
+   background-color: goldenrod;
+   width: 100px;
+   margin: 10px;
+   text-align: center;
+   line-height: 75px;
+   font-size: 30px;
+}
+.flex-container4{
+   display: flex;
+   background-color: darkgreen;
+   height: 600px;
+   flex-wrap: wrap;
+   align-content:space-between;
+}
+.flex-container4 > div {
+   background-color: goldenrod;
+   width: 100px;
+   margin: 10px;
+   text-align: center;
+   line-height: 75px;
+   font-size: 30px;
+}
+.flex-container5{
+    display: flex;
+    background-color: darkgreen;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content:space-around;
+ }
+ .flex-container5 > div {
+    background-color: goldenrod;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+ }
+h1{text-align: center;background-color: coral;border: 1px solid black;}
+h1.header{text-align: center;background-color: yellow;border: 1 px solid red;}
