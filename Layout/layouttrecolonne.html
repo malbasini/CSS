@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout a tre colonne</title>
+<style>
+    .wrapper {
+        display: flex;  
+        flex-flow: row wrap;
+        text-align:center; 
+        font-weight: bold;
+      }
+      .wrapper > * {
+        padding: 10px;
+        flex: 1 100%;
+      }
+      .header, .footer {
+        background-color:goldenrod;
+        padding: 3%;
+        text-align: center;
+        color:darkred;
+        font-size: 34px;
+      }
+      .main {
+        text-align: left;
+        background-color: #8d99ae;
+      }
+      .aside-1 {
+        background-color: #ccd5ae;
+        text-align: center;
+      }
+      .aside-2 {
+        background: #ccd5ae;
+        text-align: center;
+      }
+      @media all and (min-width: 600px) {
+        .aside { flex: 1 0 0; }
+      }
+      @media all and (min-width: 800px) {
+        .main    { flex: 6 0; }
+        .aside-1 { order: 1; } 
+        .main    { order: 2; }
+        .aside-2 { order: 3; }
+        .footer  { order: 4; }
+      }
+      body {
+        padding: 2em; 
+        background-color: gray
+      }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">HEADER</header>
+        <article class="main">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque sunt voluptatibus dolorum, sed ratione, illum suscipit 
+            ipsum libero temporibus error nam magni est earum quidem a 
+            accusantium soluta consequatur optio.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque sunt voluptatibus dolorum, sed ratione, illum suscipit 
+            ipsum libero temporibus error nam magni est earum quidem a 
+            accusantium soluta consequatur optio.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque sunt voluptatibus dolorum, sed ratione, illum suscipit 
+            ipsum libero temporibus error nam magni est earum quidem a 
+            accusantium soluta consequatur optio.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque sunt voluptatibus dolorum, sed ratione, illum suscipit 
+            ipsum libero temporibus error nam magni est earum quidem a 
+            accusantium soluta consequatur optio.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque sunt voluptatibus dolorum, sed ratione, illum suscipit 
+            ipsum libero temporibus error nam magni est earum quidem a 
+            accusantium soluta consequatur optio.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque sunt voluptatibus dolorum, sed ratione, illum suscipit 
+            ipsum libero temporibus error nam magni est earum quidem a 
+            accusantium soluta consequatur optio.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque sunt voluptatibus dolorum, sed ratione, illum suscipit 
+            ipsum libero temporibus error nam magni est earum quidem a 
+            accusantium soluta consequatur optio.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque sunt voluptatibus dolorum, sed ratione, illum suscipit 
+            ipsum libero temporibus error nam magni est earum quidem a 
+            accusantium soluta consequatur optio.
+        </p>
+        </article>
+        <aside class="aside aside-1" style="text-align: center;">Left Column</aside>
+        <aside class="aside aside-2">Right Column</aside>
+        <footer class="footer">FOOTER</footer>
+    </div>
+</body>
+</html>
