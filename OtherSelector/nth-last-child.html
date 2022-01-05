@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /*--Il selettore :nth-last-child(n) corrisponde a ogni elemento 
+    che è l'ennesimo figlio, indipendentemente dal tipo, 
+    del suo genitore, contando dall'ultimo figlio.
+    n può essere un numero, una parola chiave o una formula.
+    Suggerimento: guarda il selettore :nth-last-of-type() per 
+    selezionare l'elemento che è l'ennesimo figlio, di un tipo 
+    specificato, del suo genitore, contando dall'ultimo figlio.*/
+    p:nth-last-child(odd) {
+        background: red;
+      }
+      
+    p:nth-last-child(even) {
+        background: blue;
+      }
+    /*--Usando una formula (an + b). a rappresenta una dimensione del ciclo, 
+        n è un contatore (inizia da 0) e b è un valore di offset.
+        Qui, specifichiamo un colore di sfondo per tutti gli elementi p 
+        il cui indice è un multiplo di 3, contando dall'ultimo figlio:*/
+    p:nth-last-child(3n+0) {
+            background: yellow;
+          }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ea tempore dicta illo veritatis asperiores, consectetur doloribus enim 
+        aperiam, accusamus impedit id maiores. Eius dolore cupiditate 
+        laborum eos sit soluta beatae.
+    </p>
+    <p>Recusandae excepturi ipsum placeat, optio, sed repudiandae veniam 
+        cumque exercitationem ullam reprehenderit ab sapiente hic? Id, 
+        rem assumenda atque sequi magni est sint blanditiis dolores 
+        molestias quas earum veritatis mollitia!
+    </p>
+    <p>Animi neque sapiente magni commodi dolor ratione quo reprehenderit 
+        rem quisquam possimus nobis, beatae veniam quaerat aliquam enim 
+        quod odio expedita, distinctio sit! Aspernatur molestias inventore 
+        velit consequuntur odio quia.
+    </p>
+    <p>Animi neque sapiente magni commodi dolor ratione quo reprehenderit 
+        rem quisquam possimus nobis, beatae veniam quaerat aliquam enim 
+        quod odio expedita, distinctio sit! Aspernatur molestias inventore 
+        velit consequuntur odio quia.
+    </p>
+</body>
+</html>

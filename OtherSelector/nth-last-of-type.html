@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+/*--Il selettore :nth-last-of-type(n) corrisponde a ogni elemento che è 
+    l'ennesimo figlio, di un tipo particolare, del suo genitore, contando 
+    dall'ultimo figlio.
+    n può essere un numero, una parola chiave o una formula.
+    Suggerimento: guarda il selettore :nth-last-child() 
+    per selezionare l'elemento che è l'ennesimo figlio, 
+    indipendentemente dal tipo, del suo genitore, contando 
+    dall'ultimo figlio.*/
+    p:nth-last-of-type(2) {
+        background: red;
+    }
+    p:nth-last-of-type(3n+0) {
+        background: yellow;
+      }
+</style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Aliquam, autem quam. Voluptatem eaque voluptatibus accusamus 
+        consectetur exercitationem iusto mollitia totam eius quibusdam 
+        autem consequatur maxime dolores suscipit, explicabo sed a.
+    </p>
+    <p>Praesentium voluptatum quia maxime ea, nihil illum dolores 
+        voluptas natus sapiente, ut autem cupiditate ipsum omnis, 
+        nam dolore beatae harum nostrum laudantium aut libero. 
+        Iure dolor quae hic voluptate natus?
+    </p>
+    <p>Nemo ipsam ratione odio! Blanditiis tempora 
+        consequuntur sunt, excepturi repudiandae quaerat 
+        aut enim molestias possimus cumque labore incidunt 
+        dignissimos itaque nisi dolores aliquam vel, quibusdam 
+        iste delectus commodi! Sint, voluptate!
+    </p>
+    <p>Consectetur consequuntur, placeat nobis quod sint deserunt 
+        repellat voluptatem optio repudiandae explicabo? Doloribus commodi 
+        fugit suscipit rem numquam reiciendis alias beatae 
+        mollitia iusto quam? Culpa repellat a ducimus ipsum vel.
+    </p>
+</body>
+</html>
