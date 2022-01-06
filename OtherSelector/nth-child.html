@@ -12,33 +12,95 @@
         Suggerimento: guarda il selettore :nth-of-type() per selezionare 
         l'elemento che è l'ennesimo figlio, di un tipo particolare, 
         del suo genitore.*/
-        p:nth-child(odd) {
+         p:nth-child(odd) {
             background: red;
           }
-        p:nth-child(even) {
+         p:nth-child(even) {
             background: blue;
           }
+         p.quinto:nth-child(5)
+         {
+            background-color: yellow;
+         }
           /*--Usando una formula (an + b) dove a rappresenta una dimensione 
            del ciclo, n è un contatore (inizia da 0) e b è un valore di offset.
            Qui, specifichiamo un colore di sfondo per tutti gli elementi 
-           p il cui indice è un multiplo di 3:*/
-           p:nth-child(3n+0) {
-            background:yellowgreen;
+           tr il cui indice è un multiplo di 2:*/
+         tr:nth-child(2n+0) {
+            background:grey;
+          }
+         tr:nth-child(2n+0):hover {
+            background:goldenrod
+          }
+         table {
+            border: 3px solid red;
+            background-color:bisque
           }
     </style>
 </head>
 <body>
-    <p>1</p>
-    <p>2</p>
-    <p>3</p>
-    <p>4</p>
-    <p>5</p>
-    <p>6</p>
-    <p>7</p>
-    <p>8</p>
-    <p>9</p>
-    <p>10</p>
-    <p>11</p>
-    <p>12</p>
+    <p>primo</p>
+    <p>secondo</p>
+    <p>terzo</p>
+    <p>quarto</p>
+    <p class="quinto">quinto</p>
+    <table>
+      <tr>
+        <td>
+           COLONNA UNO
+        </td>
+        <td>
+           COLONNA DUE
+        </td>
+        <td>
+           COLONNA TRE
+        </td>
+        <td>
+           COLONNA QUATTRO
+        </td>
+      </tr>
+      <tr>
+        <td>
+           COLONNA UNO
+        </td>
+        <td>
+           COLONNA DUE
+        </td>
+        <td>
+           COLONNA TRE
+        </td>
+        <td>
+           COLONNA QUATTRO
+        </td>
+      </tr>
+      <tr>
+        <td>
+           COLONNA UNO
+        </td>
+        <td>
+           COLONNA DUE
+        </td>
+        <td>
+           COLONNA TRE
+        </td>
+        <td>
+           COLONNA QUATTRO
+        </td>
+      </tr>
+      <tr>
+        <td>
+           COLONNA UNO
+        </td>
+        <td>
+           COLONNA DUE
+        </td>
+        <td>
+           COLONNA TRE
+        </td>
+        <td>
+           COLONNA QUATTRO
+        </td>
+      </tr>
+    </table>
 </body>
 </html>

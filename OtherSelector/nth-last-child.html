@@ -15,18 +15,27 @@
     specificato, del suo genitore, contando dall'ultimo figlio.*/
     p:nth-last-child(odd) {
         background: red;
-      }
-      
+    }
     p:nth-last-child(even) {
         background: blue;
-      }
+    }
+    p:nth-last-child(2) {
+        background:yellow;
+    }
     /*--Usando una formula (an + b). a rappresenta una dimensione del ciclo, 
         n è un contatore (inizia da 0) e b è un valore di offset.
-        Qui, specifichiamo un colore di sfondo per tutti gli elementi p 
-        il cui indice è un multiplo di 3, contando dall'ultimo figlio:*/
-    p:nth-last-child(3n+0) {
-            background: yellow;
-          }
+        Qui, specifichiamo un colore di sfondo per tutti gli elementi tr 
+        il cui indice è un multiplo di 2, contando dall'ultimo figlio:*/
+    tr:nth-last-child(2n+0) {
+            background:grey;
+    }
+    tr:nth-last-child(2n+0):hover {
+            background:goldenrod
+    }
+    table {
+            border: 3px solid red;
+            background-color:bisque
+    }
     </style>
 </head>
 <body>
@@ -50,5 +59,115 @@
         quod odio expedita, distinctio sit! Aspernatur molestias inventore 
         velit consequuntur odio quia.
     </p>
+    <p>Animi neque sapiente magni commodi dolor ratione quo 
+        reprehenderit rem quisquam possimus nobis, beatae veniam quaerat aliquam enim 
+        quod odio expedita, distinctio sit! Aspernatur molestias inventore 
+        velit consequuntur odio quia.
+    </p>
+    <p>Animi neque sapiente magni commodi dolor ratione quo reprehenderit 
+        rem quisquam possimus nobis, beatae veniam quaerat aliquam enim 
+        quod odio expedita, distinctio sit! Aspernatur molestias inventore 
+        velit consequuntur odio quia.
+    </p>
+    <table>
+        <tr>
+          <td>
+             COLONNA UNO
+          </td>
+          <td>
+             COLONNA DUE
+          </td>
+          <td>
+             COLONNA TRE
+          </td>
+          <td>
+             COLONNA QUATTRO
+          </td>
+        </tr>
+        <tr>
+          <td>
+             COLONNA UNO
+          </td>
+          <td>
+             COLONNA DUE
+          </td>
+          <td>
+             COLONNA TRE
+          </td>
+          <td>
+             COLONNA QUATTRO
+          </td>
+        </tr>
+        <tr>
+          <td>
+             COLONNA UNO
+          </td>
+          <td>
+             COLONNA DUE
+          </td>
+          <td>
+             COLONNA TRE
+          </td>
+          <td>
+             COLONNA QUATTRO
+          </td>
+        </tr>
+        <tr>
+          <td>
+             COLONNA UNO
+          </td>
+          <td>
+             COLONNA DUE
+          </td>
+          <td>
+             COLONNA TRE
+          </td>
+          <td>
+             COLONNA QUATTRO
+          </td>
+        </tr>
+        <tr>
+            <td>
+               COLONNA UNO
+            </td>
+            <td>
+               COLONNA DUE
+            </td>
+            <td>
+               COLONNA TRE
+            </td>
+            <td>
+               COLONNA QUATTRO
+            </td>
+          </tr>
+          <tr>
+            <td>
+               COLONNA UNO
+            </td>
+            <td>
+               COLONNA DUE
+            </td>
+            <td>
+               COLONNA TRE
+            </td>
+            <td>
+               COLONNA QUATTRO
+            </td>
+          </tr>
+          <tr>
+            <td>
+               COLONNA UNO
+            </td>
+            <td>
+               COLONNA DUE
+            </td>
+            <td>
+               COLONNA TRE
+            </td>
+            <td>
+               COLONNA QUATTRO
+            </td>
+          </tr>
+      </table>
 </body>
 </html>
